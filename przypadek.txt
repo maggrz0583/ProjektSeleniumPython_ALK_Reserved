@@ -1,0 +1,25 @@
+Projekt: projekt 1
+
+Scenariusz testowy:
+Rejestracja nowego użytkownika 
+
+Przypadek testowy:
+ID 001 Rejestracja nowego użytkownika przy użyciu niepoprawnego adresu email
+
+Warunki wstępne:
+1. Otwarta strona https://www.douglas.pl/pl
+2. Użytkownik nie jest zalogowany
+
+
+Kroki:
+1. Kliknij zarejestruj  - otwiera się strona rejestracji
+2. Wpisz imię
+3. Wpisz nazwisko
+4. Wpisz niepoprawny email
+5. Wpisz hasło
+6. Potwierdź hasło
+7. Zaznacz zgodę na otryzmywanie informacji handlowych
+8. Zaznacz akceptację regulaminu
+
+Oczekiwany rezultat:
+1. Uzytkownik 
