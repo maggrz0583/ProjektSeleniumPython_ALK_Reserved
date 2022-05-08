@@ -22,4 +22,4 @@ Kroki:
 8. Zaznacz akceptację regulaminu
 
 Oczekiwany rezultat:
-1. Uzytkownik 
+1. Uzytkownik nie jest zalogowany
