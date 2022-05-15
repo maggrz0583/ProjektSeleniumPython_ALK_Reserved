@@ -5,7 +5,7 @@ import unittest
 
 class TestRegistration(unittest.TestCase):
     def setUp(self):
-        #przygotowanie testu
+        ##przygotowanie testu
         #otwarta strona https://www.douglas.pl/pl/login
     def tearDown(self):
         pass
