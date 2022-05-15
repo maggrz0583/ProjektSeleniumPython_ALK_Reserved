@@ -12,10 +12,11 @@ class TestRegistration(unittest.TestCase):
 
     def tearDown(self):
         # Zakończenie testu
-        self.driver.quit()
+        self.driver.quit(15)
 
     def testInvalidEmail(self):
-        pass
+        #1.Kliknij utwórz konto - otwiera się strona rejestracji
+        driver.find.element(By.)
 #Jeśli uruchamiam ten plik
 if __name__== "__main__":
 #Uruchom testy
