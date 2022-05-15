@@ -24,4 +24,5 @@ Kroki:
 10. Zaznacz akceptację regulaminu
 11. Kliknij utwórz konto
 Oczekiwany rezultat:
-1. Uzytkownik nie jest zalogowany
+1. Użytkownik otrzymuje informację "Wprowadzono niepoprawny adres email" pojawiającą się pod polem.
+2. Konto nie zostaje założone
