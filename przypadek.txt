@@ -12,14 +12,16 @@ Warunki wstępne:
 
 
 Kroki:
-1. Kliknij zarejestruj  - otwiera się strona rejestracji
+1. Kliknij utwórz konto  - otwiera się strona rejestracji
 2. Wpisz imię
 3. Wpisz nazwisko
-4. Wpisz niepoprawny email
-5. Wpisz hasło
-6. Potwierdź hasło
-7. Zaznacz zgodę na otryzmywanie informacji handlowych
-8. Zaznacz akceptację regulaminu
-
+4. Wpisz datę urodzenia
+5. Zaznacz płeć
+6. Wpisz niepoprawny email
+7. Wpisz hasło
+8. Potwierdź hasło
+9. Zaznacz zgodę na otryzmywanie informacji handlowych
+10. Zaznacz akceptację regulaminu
+11. Kliknij utwórz konto
 Oczekiwany rezultat:
 1. Uzytkownik nie jest zalogowany
