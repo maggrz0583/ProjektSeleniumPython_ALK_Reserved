@@ -2,8 +2,11 @@
 
 import unittest
 from selenium import webdriver
+from selenium.webdriver.common import actions
 from selenium.webdriver.common.by import By
 from time import sleep
+
+
 
 class TestRegistration(unittest.TestCase):
     def setUp(self):
@@ -24,7 +27,17 @@ class TestRegistration(unittest.TestCase):
         accept_btn = driver.find_element(By.ID,"footer_tc_privacy_button_2")
         accept_btn.click()
 
-        #Jeśli uruchamiam ten plik
-if __name__== "__main__":
-#Uruchom testy
-    unittest.main()
+        #Kliknij profil - otwiera się menu z opcjami zalogowania/utworzenia konta
+        profile = driver.find_element(By.LINK_TEXT, "Konto")
+        webdriver.ActionChains(driver).move_to_element(profile).perform()
+
+        # Utwórz konto
+        registracion = driver.find_element(By.LINK_TEXT, "UTWÓRZ KONTO")
+        registracion.click()
+        #otwiera się strona rejestracji - NIE AŁA
+        self.assertIn("UTWÓRZ KONTO", driver.title)
+
+        # Jeśli uruchamiam ten plik
+if __name__ == "__main__":
+         # Uruchom testy
+     unittest.main()
