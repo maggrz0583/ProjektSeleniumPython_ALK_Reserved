@@ -4,11 +4,16 @@ import unittest
 
 class TestRegistration(unittest.TestCase):
     def setUp(self):
-        pass
-        #przygotowanie testu
-        #otwarta strona https://www.douglas.pl/pl/login
+        #Przygotowanie testu
+        #1. Otwarta strona https://www.douglas.pl/pl
+        self.driver = webdriver.Firefox()
+        self.driver.maximize_window()
+        self.driver.get("https://www.douglas.pl/pl")
+
     def tearDown(self):
-        pass
+        # Zakończenie testu
+        self.driver.quit()
+
     def testInvalidEmail(self):
         pass
 #Jeśli uruchamiam ten plik
