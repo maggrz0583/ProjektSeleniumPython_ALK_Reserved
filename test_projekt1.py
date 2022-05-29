@@ -8,6 +8,7 @@ from time import sleep
 
 
 
+
 class TestRegistration(unittest.TestCase):
     def setUp(self):
         #Przygotowanie testu
@@ -38,7 +39,25 @@ class TestRegistration(unittest.TestCase):
         register.click()
         #otwiera się strona rejestracji
         #self.assertIn("Utwórz konto", driver.title)
-#
+
+        # Wpisz niepoprawny e-mail
+        email_input = driver.find_element(By.ID, 'email_id')
+        email_input.send_keys("magda$magda.pl")
+        #Wpisz imię
+        imie_input = driver.find_element(By.ID, 'firstname_id')
+        imie_input.send_keys("Magda")
+        #Wpisz nazwisko
+        nazwisko_input = driver.find_element(By.ID, 'lastname_id')
+        nazwisko_input.send_keys("Lena")
+        # Wpisz hasło
+        haslo_input = driver.find_element(By.ID, 'password_id')
+        haslo_input.send_keys("blabla123@")
+        #Zaznacz zgody
+        zgoda_radiobutton = driver.find_element(By.ID, 'is_subscribed_id')
+        zgoda_radiobutton.click()
+        #Kliknij załóż konto
+        register = driver.find_element(By.XPATH, '//*[@id="loginRegisterRoot"]/div/div[2]/div/form/button')
+        register.click()
         # Jeśli uruchamiam ten plik
 if __name__ == "__main__":
          # Uruchom testy

@@ -7,22 +7,20 @@ Przypadek testowy:
 ID 001 Rejestracja nowego użytkownika przy użyciu niepoprawnego adresu email
 
 Warunki wstępne:
-1. Otwarta strona https://www.douglas.pl/pl
+1. Otwarta strona https://www.reserved.com/pl/pl/
 2. Użytkownik nie jest zalogowany
 
 
 Kroki:
-1. Kliknij utwórz konto  - otwiera się strona rejestracji
-2. Wpisz imię
-3. Wpisz nazwisko
-4. Wpisz datę urodzenia
-5. Zaznacz płeć
-6. Wpisz niepoprawny email
-7. Wpisz hasło
-8. Potwierdź hasło
-9. Zaznacz zgodę na otryzmywanie informacji handlowych
-10. Zaznacz akceptację regulaminu
-11. Kliknij utwórz konto
+1. Zaakceptuj pop-up
+2. Kliknij utwórz konto  - otwiera się strona rejestracji
+3. Wpisz niepoprawny e-mail
+4. Wpisz imię
+5. Wpisz nazwisko
+6. Wpisz hasło
+7. Zaznacz zgodę na otrzymywanie informacji handlowych
+10.Kliknij załóż konto
+
 Oczekiwany rezultat:
 1. Użytkownik otrzymuje informację "Wprowadzono niepoprawny adres email" pojawiającą się pod polem.
 2. Konto nie zostaje założone
