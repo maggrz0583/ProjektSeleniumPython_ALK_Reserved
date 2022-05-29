@@ -42,6 +42,15 @@ class TestSortowanie(unittest.TestCase):
         sukienki = driver.find_element(By.LINK_TEXT, 'Sukienki')
         sukienki.click()
 
+        sortuj = driver.find_element(By.XPATH, '//*[@id="categoryFilters"]/form/div/div[1]/label')
+        sortuj.click()
+
+        rosnaco = driver.find_element(By.XPATH, '//*[@id="categoryFilters"]/form/div/div[1]/ul/li[1]/div/label')
+        rosnaco.click()
+
+        sortuj_enter = driver.find_element(By.XPATH, '//*[@id="categoryFilters"]/form/div/div[1]/ul/div/button')
+        sortuj_enter.click()
+
 
 
        # Jeśli uruchamiam ten plik
