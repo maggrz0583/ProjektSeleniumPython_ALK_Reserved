@@ -58,7 +58,10 @@ class TestRegistration(unittest.TestCase):
         #Kliknij załóż konto
         register = driver.find_element(By.XPATH, '//*[@id="loginRegisterRoot"]/div/div[2]/div/form/button')
         register.click()
-        # Jeśli uruchamiam ten plik
+
+       # Jeśli uruchamiam ten plik
 if __name__ == "__main__":
          # Uruchom testy
      unittest.main()
+
+
