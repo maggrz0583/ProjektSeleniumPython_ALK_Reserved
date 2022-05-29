@@ -1,10 +1,17 @@
 #Import bibliotek
 
 import unittest
+from hashlib import new
+
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common import actions
 from selenium.webdriver.common.by import By
 from time import sleep
+
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
+
 
 class TestSortowanie(unittest.TestCase):
     def setUp(self):
@@ -14,6 +21,7 @@ class TestSortowanie(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get("https://www.reserved.com/pl/pl/")
 
+
     def tearDown(self):
         # Zakończenie testu
         self.driver.quit()
@@ -21,13 +29,18 @@ class TestSortowanie(unittest.TestCase):
     def testByPrice(self, span=None):
         driver = self.driver
         # Zaakceptuj popup
-        driver.implicitly_wait(15)
+        driver.implicitly_wait(20)
         accept_btn = driver.find_element(By.ID,"cookiebotDialogOkButton")
         accept_btn.click()
 
-        # Kliknij w menu "kobieta"
-        kobieta = driver.find_element(By.ID, "category-link")
-        kobieta.click()
+        #Najedź w menu głównym na pozycję "kobieta"
+        kobieta = driver.find_element(By.XPATH, '//*[@id="navigation-wrapper"]/div/ul/li[2]/a')
+        driver.implicitly_wait(30)
+        webdriver.ActionChains(driver).move_to_element(kobieta).perform()
+
+        #Kliknij w podmenu na pozycję "sukienki"
+        sukienki = driver.find_element(By.LINK_TEXT, 'Sukienki')
+        sukienki.click()
 
 
 
