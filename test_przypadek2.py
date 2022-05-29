@@ -6,7 +6,7 @@ from selenium.webdriver.common import actions
 from selenium.webdriver.common.by import By
 from time import sleep
 
-class TestRegistration(unittest.TestCase):
+class TestSortowanie(unittest.TestCase):
     def setUp(self):
         #Przygotowanie testu
         #1. Otwarta strona https://www.reserved.com/pl/pl/
@@ -18,17 +18,20 @@ class TestRegistration(unittest.TestCase):
         # Zakończenie testu
         self.driver.quit()
 
-    def testInvalidEmail(self, span=None):
+    def testByPrice(self, span=None):
         driver = self.driver
         # Zaakceptuj popup
         driver.implicitly_wait(15)
         accept_btn = driver.find_element(By.ID,"cookiebotDialogOkButton")
         accept_btn.click()
 
-        #Kliknij w menu "kobieta"
-        kobieta = driver.find_element(By.XPATH, "//*[@id="navigation-wrapper"]/div/ul/li[2]/a")
+        # Kliknij w menu "kobieta"
+        kobieta = driver.find_element(By.ID, "category-link")
         kobieta.click()
-        # Jeśli uruchamiam ten plik
+
+
+
+       # Jeśli uruchamiam ten plik
 if __name__ == "__main__":
          # Uruchom testy
      unittest.main()

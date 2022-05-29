@@ -6,9 +6,6 @@ from selenium.webdriver.common import actions
 from selenium.webdriver.common.by import By
 from time import sleep
 
-
-
-
 class TestRegistration(unittest.TestCase):
     def setUp(self):
         #Przygotowanie testu
@@ -58,6 +55,8 @@ class TestRegistration(unittest.TestCase):
         #Kliknij załóż konto
         register = driver.find_element(By.XPATH, '//*[@id="loginRegisterRoot"]/div/div[2]/div/form/button')
         register.click()
+
+
 
        # Jeśli uruchamiam ten plik
 if __name__ == "__main__":
