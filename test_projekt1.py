@@ -2,7 +2,6 @@
 
 import unittest
 from selenium import webdriver
-path = 'C:\Users\Magdalena\Desktop\Geckodriver'
 from selenium.webdriver.common import actions
 from selenium.webdriver.common.by import By
 from time import sleep
@@ -12,7 +11,7 @@ class TestRegistration(unittest.TestCase):
     def setUp(self):
         # Przygotowanie testu
         # 1. Otwarta strona https://www.reserved.com/pl/pl/
-        self.driver = webdriver.Firefox(path)
+        self.driver = webdriver.Firefox()
         self.driver.maximize_window()
         self.driver.get("https://www.reserved.com/pl/pl/")
 
